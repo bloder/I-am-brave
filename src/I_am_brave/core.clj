@@ -21,6 +21,11 @@
    (destructuring ["Daniel" "Ronaldo" "Marcos"])
    (anonymous-function 1)))
 
+(defn str-function
+  "Str function example with destructuring"
+  [[First Second & Losers]]
+  (str "Winner - " First " Second - " Second " Losers - " Losers))
+
 (defn -main
   [& args]
-  other-anonymous-function)
+  (str-function ["Bloder" "Daniel" "Romario" "Ronaldo" "Ronaldinho"]))
