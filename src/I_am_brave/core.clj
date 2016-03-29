@@ -14,18 +14,27 @@
   "Other way to call anonymous function with params"
   (#(* % 2) 8))
 
-(defn verify-function
+(defn verify
   "If - Else example"
   [x]
   (if (> x 1)
    (destructuring ["Daniel" "Ronaldo" "Marcos"])
    (anonymous-function 1)))
 
-(defn str-function
+(defn str-example
   "Str function example with destructuring"
   [[First Second & Losers]]
   (str "Winner - " First " Second - " Second " Losers - " Losers))
 
+(defn sum-example-for-closure
+  "Here's just a simple example to be called by a closure"
+  [sum]
+  #(+ % sum))
+
+(def closure-function
+  "Closure function example... I loved this *-----* "
+  (sum-example-for-closure 5))
+
 (defn -main
   [& args]
-  (str-function ["Bloder" "Daniel" "Romario" "Ronaldo" "Ronaldinho"]))
+  (closure-function 10))
