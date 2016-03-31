@@ -1,10 +1,5 @@
-(ns I-am-brave.core)
-
-(defn destructuring
-  "Destructuring example"
-  [[first & second]]
-  (println "First param : " first )
-  (println "Other params : " second))
+(ns I-am-brave.core
+  (:use [I-am-brave.destructuring :as destructuring]))
 
 (def anonymous-function
   "Anonymous Function example"
@@ -21,11 +16,6 @@
    (destructuring ["Daniel" "Ronaldo" "Marcos"])
    (anonymous-function 1)))
 
-(defn str-example
-  "Str function example with destructuring"
-  [[First Second & Losers]]
-  (str "Winner - " First " Second - " Second " Losers - " Losers))
-
 (defn sum-example-for-closure
   "Here's just a simple example to be called by a closure"
   [sum]
@@ -37,4 +27,4 @@
 
 (defn -main
   [& args]
-  (closure-function 10))
+  (destructuring/str-example ["Daniel" "Ronaldo" "Marcelo"]))
