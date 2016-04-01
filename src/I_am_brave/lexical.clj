@@ -8,3 +8,8 @@
 (let
   [[k x :as crazy-function] [(+ (inc 2) (inc 2))]]
   (println crazy-function))
+
+(defn let-example
+  [x]
+  (let [y x c y]
+    (println y " " c)))
