@@ -7,4 +7,4 @@
 
 (defn -main
   [& args]
-  (lexical/let-example 2))
+  ((loop-ns/other-boring-sum-function 2)))
