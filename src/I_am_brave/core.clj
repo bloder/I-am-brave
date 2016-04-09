@@ -9,4 +9,4 @@
 
 (defn -main
   [& args]
-  (take 2 take-drop-ns/str-veq))
+  (drop 2 take-drop-ns/str-veq))

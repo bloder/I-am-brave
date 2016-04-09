@@ -8,3 +8,9 @@
 
 ;;(take 2 number-veq)
 ;; => [3 5]
+
+;;(drop 2 str-veq)
+;; => ["Zika" "do" "Baile"]
+
+;;(drop 2 number-veq)
+;; => [6 4 7]
