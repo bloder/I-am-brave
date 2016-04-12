@@ -8,6 +8,9 @@
   (if (> x 1)
    (destructuring/destructuring ["Daniel" "Ronaldo" "Marcos"])
    (lambda/nonymous-function 1)))
-   
+
 ;; PRIVATE FUNCTIONS
-(def ^:private (fn [x] (+ x x)))
+(def ^:private (fn [foo] (+ foo foo)))
+(defn- sum-number [bar] (+ bar bar))
+;; OR
+(defn ^:private sum-number [foo] (+ foo foo))
