@@ -10,3 +10,6 @@
   "Str function example with destructuring"
   [[First Second & Losers]]
   (str "Winner - " First " Second - " Second " Losers - " Losers))
+
+(let [{:keys [bar]} {:foo 2 :bar 3}] bar)
+;; 3
