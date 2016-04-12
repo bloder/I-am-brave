@@ -8,3 +8,6 @@
   (if (> x 1)
    (destructuring/destructuring ["Daniel" "Ronaldo" "Marcos"])
    (lambda/nonymous-function 1)))
+   
+;; PRIVATE FUNCTIONS
+(def ^:private (fn [x] (+ x x)))
