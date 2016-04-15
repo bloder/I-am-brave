@@ -3,15 +3,6 @@
 (def number-veq [3 5 6 4 7])
 (def str-veq ["Bloder" "Daniel" "Zika" "do" "Baile"])
 
-(def name-collection [
-  {:name "Daniel" :age 12}
-  {:name "Bloder" :age 13}
-  {:name "Zikao" :age 14}
-  {:name "Diguidin" :age 15}
-  {:name "Sarrante" :age 16}
-  {:name "Passinho do Romano" :age 17}
-  ])
-
 ;;(take 2 str-veq)
 ;; => ["Bloder" "Daniel"]
 
@@ -23,3 +14,15 @@
 
 ;;(drop 2 number-veq)
 ;; => [6 4 7]
+
+(def name-collection [
+  {:name "Daniel" :age 12}
+  {:name "Bloder" :age 13}
+  {:name "Zikao" :age 14}
+  {:name "Diguidin" :age 15}
+  {:name "Sarrante" :age 16}
+  {:name "Passinho do Romano" :age 17}
+  ])
+
+(take-while #(< (:age %) 16) name-collection)
+;; ({:age 12, :name "Daniel"} {:age 13, :name "Bloder"} {:age 14, :name "Zikao"} {:age 15, :name "Diguidin"})
