@@ -38,3 +38,6 @@
 
 (sort-by count ["asdsa" "asd" "qw"])
 ;; ("qw" "asd" "asdsa")
+
+(concat (sort [1 3 2]) (sort [7 5 8]))
+;; (1 2 3 5 7 8)
