@@ -32,3 +32,6 @@
 
 (filter #(< (:age %) 14) name-collection)
 ;; ({:age 12, :name "Daniel"} {:age 13, :name "Bloder"})
+
+(sort [3 1 2])
+;;[1 2 3]
