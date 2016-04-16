@@ -41,3 +41,6 @@
 
 (concat (sort [1 3 2]) (sort [7 5 8]))
 ;; (1 2 3 5 7 8)
+
+(into ["DANIEL"] '("Bloder"))
+;; ["DANIEL" "Bloder"]
