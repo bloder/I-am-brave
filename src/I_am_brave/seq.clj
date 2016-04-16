@@ -3,16 +3,16 @@
 (def number-veq [3 5 6 4 7])
 (def str-veq ["Bloder" "Daniel" "Zika" "do" "Baile"])
 
-;;(take 2 str-veq)
+(take 2 str-veq)
 ;; => ["Bloder" "Daniel"]
 
-;;(take 2 number-veq)
+(take 2 number-veq)
 ;; => [3 5]
 
-;;(drop 2 str-veq)
+(drop 2 str-veq)
 ;; => ["Zika" "do" "Baile"]
 
-;;(drop 2 number-veq)
+(drop 2 number-veq)
 ;; => [6 4 7]
 
 (def name-collection [
