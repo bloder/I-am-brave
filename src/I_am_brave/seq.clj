@@ -29,3 +29,6 @@
 
 (drop-while #(< (:age %) 16) name-collection)
 ;; ({:age 16, :name "Sarrante"} {:age 17, :name "Passinho do Romano"})
+
+(filter #(< (:age %) 14) name-collection)
+;; ({:age 12, :name "Daniel"} {:age 13, :name "Bloder"})
