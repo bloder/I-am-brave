@@ -39,6 +39,18 @@
 (sort-by count ["asdsa" "asd" "qw"])
 ;; ("qw" "asd" "asdsa")
 
+(def sort-params
+  "Concat two sorted params"
+  (fn [x y] (concat (sort x) (sort y))))
+
+(sort-params ["hey mom" "Hello"] ["clojure" "foo" "deu"])
+
+;; ("Hello" "hey mom" "clojure" "deu" "foo")
+
+(sort-params [54 34 21] [12 67 32 78])
+
+;; (21 34 54 12 32 67 78)
+
 (concat (sort [1 3 2]) (sort [7 5 8]))
 ;; (1 2 3 5 7 8)
 
