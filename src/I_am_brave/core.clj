@@ -7,6 +7,4 @@
   (:use [I-am-brave.map :as map-ns])
   (:use [I-am-brave.take-drop :as take-drop-ns]))
 
-(defn -main
-  [& args]
-  (drop 2 take-drop-ns/str-veq))
+(defn -main [& args] )
