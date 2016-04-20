@@ -16,3 +16,6 @@
 
 (build-operation (5 + 7))
 ;; 12
+
+(build-operation (8 * 2))
+;; 16
