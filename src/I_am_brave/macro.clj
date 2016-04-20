@@ -6,3 +6,13 @@
 
 (sum-macro (+ 2 2 3))
 ;; 4
+
+;; OMG LOOK THIS EXAMPLE
+(defmacro build-operation
+  [oper]
+  (list (second oper)
+        (first oper)
+        (last oper)))
+
+(build-operation (5 + 7))
+;; 12
