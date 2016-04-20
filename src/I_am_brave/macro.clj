@@ -19,3 +19,6 @@
 
 (build-operation (8 * 2))
 ;; 16
+
+(build-operation (6 / 2))
+;; 3
