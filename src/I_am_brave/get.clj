@@ -8,3 +8,6 @@
 ;; 56
 (get-in {:foo [{:bar 23}]} [:foo 0 :bar])
 ;; 23
+
+(get-in {:bar [{:foo 15 :bloder 18}]} [:bar 0 :bloder])
+;; 18
