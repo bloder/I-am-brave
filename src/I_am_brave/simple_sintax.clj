@@ -14,3 +14,11 @@
 (defn- sum-number [bar] (+ bar bar))
 ;; OR
 (defn ^:private sum-number [foo] (+ foo foo))
+
+(defn write-hello
+  ([] "hello Bloder")
+  ([name] "hello " name)
+  ([name lastname] "hello " name " " lastname))
+
+(write-hello)
+;; hello Bloder  
