@@ -22,3 +22,10 @@
 
 (build-operation (6 / 2))
 ;; 3
+
+(defmacro crazy-sum-macro
+  [numbers]
+  (inc (second numbers)))
+
+(crazy-sum-macro (+ 2 2))
+;; 3  
