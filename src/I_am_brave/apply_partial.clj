@@ -8,6 +8,9 @@
   [first second]
   (apply conj first second))
 
+(lets-into {:foo 30} {:bar 45})
+;; {:bar 45, :foo 30}
+
 (lets-into [2 3] [4 5 6 7])
 ;; [2 3 4 5 6 7]
 
