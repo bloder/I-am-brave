@@ -30,7 +30,7 @@
 (crazy-sum-macro (+ 2 2))
 ;; 3
 
-(defmacro clojure-good-codes
+(defmacro macro-no-quote
   [badcode goodcode]
   (list 'do
         (list 'println str "this is a bad code in clojure : "
@@ -38,6 +38,19 @@
         (list 'println str "this is a good code in clojure : "
               (list 'quote goodcode))))
 
-(clojure-good-codes (1 + 1) (+ 2 2))
+(macro-no-quote (1 + 1) (+ 2 2))
 ;; this is a bad code in clojure :  (1 + 1)
 ;; this is a good code in clojure :  (+ 2 2)
+
+(defn write-in-macro
+  [text field]
+  `(println ~text (quote ~field)))
+
+(defmacro macro-with-quote
+  [bad good]
+  `(do ~(write-in-macro "this is a bad code in clojure: " bad)
+       ~(write-in-macro "this is a good code in clojure: " good)))
+
+(macro-with-quote (1 + 1) (+ 1 1))
+;; this is a bad code in clojure :  (1 + 1)
+;; this is a good code in clojure :  (+ 1 1)
