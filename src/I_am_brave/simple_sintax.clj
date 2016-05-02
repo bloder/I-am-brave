@@ -18,7 +18,10 @@
 (defn write-hello
   ([] "hello Bloder")
   ([name] (str "hello "  name))
-  ([firstname lastname] (str "hello " name " " lastname)))
+  ([firstname lastname] (str "hello " firstname " " lastname)))
+
+(write-hello "Daniel" "Martins")
+;; hello Daniel Martins
 
 (write-hello "Daniel")
 ;; hello Daniel
