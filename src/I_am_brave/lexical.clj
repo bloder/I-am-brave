@@ -13,3 +13,17 @@
   [x]
   (let [y x c y]
     (println y " " c)))
+
+(defmacro sum-macro
+  [foo]
+  (list (second foo)
+        (first foo)
+        (last foo)))
+
+(defn sum-wih-lexical-and-macro
+  [foo bar]
+  (let [x foo y bar]
+    (sum-macro (x + y))))
+
+(sum-wih-lexical-and-macro 2 5)
+;; 7  
