@@ -14,6 +14,9 @@
   (let [y x c y]
     (println y " " c)))
 
+(let-example 3)
+;; 3 3 
+
 (defmacro sum-macro
   [foo]
   (list (second foo)
@@ -26,4 +29,4 @@
     (sum-macro (x + y))))
 
 (sum-wih-lexical-and-macro 2 5)
-;; 7  
+;; 7
