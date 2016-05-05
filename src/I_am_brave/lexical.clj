@@ -1,13 +1,16 @@
 (ns I-am-brave.lexical)
 
 (let [x 1] x)
+;; 1
 
 (let [[a b] [1 2]]
   (+ a b))
+;; 3
 
 (let
   [[k x :as crazy-function] [(+ (inc 2) (inc 2))]]
   (println crazy-function))
+;; 6
 
 (defn let-example
   [x]
@@ -15,7 +18,7 @@
     (println y " " c)))
 
 (let-example 3)
-;; 3 3 
+;; 3 3
 
 (defmacro sum-macro
   [foo]
