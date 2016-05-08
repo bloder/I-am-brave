@@ -3,8 +3,10 @@
 (defn destructuring
   "Destructuring example"
   [[first & second]]
-  (println "First param : " first )
-  (println "Other params : " second))
+  (str "Params : " first " Other params : " second))
+
+(destructuring ["Daniel" "Bloder" "Ronaldo" "Ze pika grossa"])
+;; "Params : Daniel Other params : Bloder Ronaldo Ze pika grossa"
 
 (defn str-example
   "Str function example with destructuring"
