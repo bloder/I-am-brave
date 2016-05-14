@@ -8,3 +8,6 @@
 (def closure-function
   "Closure function example... I loved this *-----* "
   (sum-example-for-closure 5))
+
+(closure-function 2)
+;; 7
