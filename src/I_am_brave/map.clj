@@ -19,3 +19,9 @@
 
 (map #(str "Hello my name is " %) ["Bloder" "Daniel" "Ronaldo"])
 ;; ("Hello my name is Bloder" "Hello my name is Daniel" "Hello my name is Ronaldo")
+
+(map #(if (< % 18)
+       (str "WOW! but he's just a kid")
+       (str "LOL! what a loser, he can be arrested now"))
+[12 17 23 22])
+;; ("WOW! but he's just a kid" "WOW! but he's just a kid" "LOL! what a loser, he can be arrested now" "LOL! what a loser, he can be arrested now")
