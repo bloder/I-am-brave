@@ -18,3 +18,4 @@
 ;; ({:man 18, :woman 16} {:man 19, :woman 15} {:man 17, :woman 21} {:man 21, :woman 25})
 
 (map #(str "Hello my name is " %) ["Bloder" "Daniel" "Ronaldo"])
+;; ("Hello my name is Bloder" "Hello my name is Daniel" "Hello my name is Ronaldo")
