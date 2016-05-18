@@ -25,3 +25,5 @@
        (str "LOL! what a loser, he can be arrested now"))
 [12 17 23 22])
 ;; ("WOW! but he's just a kid" "WOW! but he's just a kid" "LOL! what a loser, he can be arrested now" "LOL! what a loser, he can be arrested now")
+
+(map compare-ages woman-age man-age)
