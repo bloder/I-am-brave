@@ -27,3 +27,4 @@
 ;; ("WOW! but he's just a kid" "WOW! but he's just a kid" "LOL! what a loser, he can be arrested now" "LOL! what a loser, he can be arrested now")
 
 (map compare-ages woman-age man-age)
+;; ({:man 16, :woman 18} {:man 15, :woman 19} {:man 21, :woman 17} {:man 25, :woman 21})
