@@ -11,3 +11,14 @@
 
 (closure-function 2)
 ;; 7
+
+(defn mapping
+  "Map concat func using closure"
+  [map]
+  #(concat % map))
+
+(def closure-mapping
+  (mapping [1 2 3]))
+
+(closure-mapping [2 3 4])
+;; (2 3 4 1 2 3)
